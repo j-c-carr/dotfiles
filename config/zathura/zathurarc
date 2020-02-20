@@ -1,0 +1,7 @@
+map <C-i> recolor
+set recolor-lightcolor "#2E3440"
+set recolor-darkcolor "#fff"
+set adjust-open "width"
+
+map <C-m> zoom in
+map <C-n> zoom out
