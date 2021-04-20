@@ -2,11 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# for tlgmr tex
-### TeX
-export PATH="/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH"
-
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -62,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='\u:\W '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -113,22 +108,27 @@ fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
+# if ! shopt -oq posix; then
+#   if [ -f /usr/share/bash-completion/bash_completion ]; then
+#     . /usr/share/bash-completion/bash_completion
+#   elif [ -f /etc/bash_completion ]; then
+#     . /etc/bash_completion
+#   fi
+# fi
 
-# ################ MY SHTUFFF
-DEFAULT=$PS1
-PS1="jcc:\W $ "
-alias mc='cd ~/McGill'
-alias trib-ssh='ssh root@104.131.78.133'
-alias host-ssh='ssh -p 65002 u253067800@92.249.44.105'
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/home/jcc/Public/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/jcc/Public/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/home/jcc/Public/anaconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/jcc/Public/anaconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# <<< conda initialize <<<
 
-source /opt/ros/melodic/setup.bash
-source ~/robotics/ws_moveit/devel/setup.bash
-source ~/robotics/ariac_ws/install/setup.bash
-
+xset r rate 400 44
