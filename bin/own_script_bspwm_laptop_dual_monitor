@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# set up the two monitors for bspwm
+mouse_monitor=$(xrandr --query | grep 'HDMI-1')
+my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-2')
+
+if [[ $my_laptop_external_monitor = *connected* ]]; then
+    xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-2 --mode 1680x1050 --rotate normal --above eDP-1
+    bspc monitor eDP-1 -d 2 3 4 5 6 7 8 9
+fi

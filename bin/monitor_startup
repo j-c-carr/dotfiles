@@ -1,0 +1,10 @@
+#!/bin/sh
+
+/usr/bin/xrandr --current | grep "HDMI-1-1 connected "
+if [ $? -eq 0 ]; then
+  echo "HDMI-1-1 found"
+  sleep 1s
+  /usr/bin/xrandr --output HDMI-1-1 --off
+  /usr/bin/xrandr --output eDP-1-1 --auto --primary
+fi
+

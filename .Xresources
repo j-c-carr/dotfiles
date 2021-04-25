@@ -14,7 +14,7 @@ URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
 
 !! Border
-URxvt.internalBorder:         20px
+URxvt.internalBorder:         18px
 
 !! font
 URxvt.font:             xft:Fira Code:size=11.5
@@ -23,7 +23,7 @@ URxvt.letterSpace:      0.8
 #define nord0 #2E3440
 #define nord1 #3B4252
 #define nord2 #434C5E
-#define nord3 #4C566A
+#define nord3 #626e88
 #define nord4 #D8DEE9
 #define nord5 #E5E9F0
 #define nord6 #ECEFF4
@@ -37,6 +37,8 @@ URxvt.letterSpace:      0.8
 #define nord14 #A3BE8C
 #define nord15 #B48EAD
 
+URxvt.depth: 32
+URxvt.background: [90]nord0
 *.foreground:   nord4
 *.background:   nord0
 *.cursorColor:  nord4

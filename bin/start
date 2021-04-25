@@ -1,0 +1,5 @@
+xrandr --output eDP-1-1 --auto --primary && xrandr --output HDMI-1-1 --off && xrandr --dpi 100
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+
+bspc monitor eDP-1-1 -d 1 2 3 4 5 6 7 8 9

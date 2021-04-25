@@ -8,6 +8,7 @@ alias cur='/$HOME/.config/rofi/rofi-course-viewer.sh'
 alias ma='vim main.tex'
 alias rms='rm main.[aflos]*'
 alias bex='bundle exec jekyll serve'
+alias pydoc='python3 -m pydoc '
 
 #
 # # backlight

@@ -744,12 +744,12 @@ endsnippet
 
 context "math()"
 snippet isc "cup" iA
-\medcap_{$1}$0
+\bigcap_{$1}$0
 endsnippet
 
 context "math()"
 snippet unn "cup" iA
-\medcup_{$1}$0
+\bigcup_{$1}$0
 endsnippet
 
 context "math()"
@@ -823,7 +823,7 @@ endsnippet
 
 priority 10
 context "math()"
-snippet "dot" "dot" riA
+snippet "dot" "dot" i
 \dot{$1}$0
 endsnippet
 
@@ -835,7 +835,7 @@ endsnippet
 
 priority 100
 context "math()"
-snippet "([a-zA-Z])dot" "dot" riA
+snippet "([a-zA-Z])dot" "dot" ri
 \dot{`!p snip.rv=match.group(1)`}
 endsnippet
 
