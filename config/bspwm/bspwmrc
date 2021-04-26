@@ -2,9 +2,8 @@
 sxhkd &
 compton &
 xsetroot -cursor_name left_ptr & # sets pointer
-# Remove mouse monitor
 xrandr --output eDP-1-1 --auto --primary && xrandr --output HDMI-1-1 --off && xrandr --dpi 100
-
+feh --bg-fill ~/Pictures/backgrounds/blue-marble.jpg
 
 ############################
 #  WORKSPACES AND BORDERS  #
@@ -30,9 +29,5 @@ bspc rule -a Zathura state=tiled
 bspc config focus_follows_pointer true
 bspc config pointer_follows_focus true
 
-#############
-#  SCRIPTS #
-#############
-xrdb /home/jcc/.Xresources
-feh --bg-fill ~/Pictures/backgrounds/blue-marble.jpg
+# Polybar
 bash /home/jcc/.config/polybar/launch.sh

@@ -10,7 +10,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'   " required
-
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-sensible'
 Plugin 'junegunn/seoul256.vim'
@@ -19,8 +18,10 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'dylanaraps/wal'
 Plugin 'dense-analysis/ale'
 let g:ale_enabled=0
+
 Plugin 'davidhalter/jedi-vim'
 let g:jedi#auto_initialization=0
+
 """""""""""
 "  Latex  "
 """""""""""
@@ -45,7 +46,6 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
-
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -78,7 +78,6 @@ hi clear SpellBad
 hi SpellBad cterm=underline,bold ctermfg=red
 hi SpellLocal term=bold ctermbg=8 guifg=LightGrey
 
-
 """""""""""""""""""""""""""""""
 "  Window / Buffer Switching  "
 """""""""""""""""""""""""""""""
@@ -93,7 +92,6 @@ nnoremap <C-j> :bprevious<CR>
 nnoremap <C-k> :bnext<CR>
 inoremap <C-a> <Esc>A
 nnoremap <C-w> <C-w><C-w>
-            
 
 """"""""""""""""""""""
 "  Quick navigation  "
@@ -108,7 +106,6 @@ noremap <Leader>x <Esc>:x<CR>
 inoremap jk <esc>
 inoremap <F12> <Esc>:w<CR>
 
-
 """""""""""""""""""
 "  File Explorer  "
 """""""""""""""""""
@@ -116,7 +113,6 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 12 
 let g:netrw_browse_split = 4
-
 
 """""""""""""""""
 "  Spell Check  "
