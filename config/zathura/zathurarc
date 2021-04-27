@@ -59,10 +59,10 @@ set completion-highlight-fg     "#eee8d5" # base2
 set index-bg                   "#232831" # base02
 set index-fg                   "#D8DEE9" # base1
 set index-active-bg             "#586e75" # base01
-set index-active-fg             "#eee8d5" # base2
+set index-active-fg             "#D8DEE9" # base2
 
 set inputbar-bg                 "#586e75" # base01
-set inputbar-fg                 "#eee8d5" # base2
+set inputbar-fg                 "#D8DEE9" # base2
 
 set statusbar-bg                "#232831" # base02
 set statusbar-fg                "D8DEE9" # base1
@@ -77,7 +77,7 @@ set default-fg                  "#D8DEE9" # base1
 # set render-loading-bg           "#232831" # base02
 
 # Recolor book content's color
-set recolor                     true
+# set recolor                     true
 set recolor-lightcolor          "#232831" # base02
 set recolor-darkcolor           "#D8DEE9" # base1
 # set recolor-keephue             true      # keep original color

@@ -1,8 +1,13 @@
 #! /bin/sh
 sxhkd &
 compton &
+
+# X settings
 xsetroot -cursor_name left_ptr & # sets pointer
 xrandr --output eDP-1-1 --auto --primary && xrandr --output HDMI-1-1 --off && xrandr --dpi 100
+xrdb ~/.Xresources
+
+# Background
 feh --bg-fill ~/Pictures/backgrounds/blue-marble.jpg
 
 ############################
@@ -25,7 +30,7 @@ bspc config right_padding        3
 
 bspc rule -a Zathura state=tiled
 
-#Focus on pointer
+# Focus on pointer
 bspc config focus_follows_pointer true
 bspc config pointer_follows_focus true
 
