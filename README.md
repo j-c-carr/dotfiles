@@ -1,2 +1,2 @@
 # dotfiles
-A home for all things nord-themed
+Config files and random housekeeping scripts
